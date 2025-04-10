@@ -1,5 +1,12 @@
 {
-  "files": [],
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["src/*"]
+    },
+    "noUnusedLocals": false,
+    "jsx": "react-jsx"
+  },
   "references": [
     {
       "path": "./tsconfig.app.json"
@@ -7,14 +14,6 @@
     {
       "path": "./tsconfig.node.json"
     }
-  ],
-  "compilerOptions": {
-    "baseUrl": ".",
-    "paths": {
-      "@/*": ["src/*"]
-    },
-    "compilerOptions": {
-      "noUnusedLocals": false
-    }
-  }
+  ]
 }
+
